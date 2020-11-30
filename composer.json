@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "kamaro/mtn",
+    "description": "A Laravel package to interact with MTN",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "kamaro",
+        "mtn"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/kamaro/mtn",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "KAMARO",
+            "email": "kamaroly@gmail.com",
             "homepage": "https://spatie.be",
             "role": "Developer"
         }
@@ -26,13 +26,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Kamaro\\Mtn\\": "src",
+            "Kamaro\\Mtn\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Kamaro\\Mtn\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Kamaro\\Mtn\\MtnServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "Mtn": "Kamaro\\Mtn\\MtnFacade"
             }
         }
     },
